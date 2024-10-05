@@ -1,0 +1,90 @@
+object Form1: TForm1
+  Left = 166
+  Height = 889
+  Top = 82
+  Width = 1600
+  Caption = 'Form1'
+  ClientHeight = 889
+  ClientWidth = 1600
+  LCLVersion = '3.2.0.0'
+  object EditA: TEdit
+    Left = 592
+    Height = 23
+    Top = 272
+    Width = 80
+    TabOrder = 0
+    Text = '0'
+  end
+  object EditB: TEdit
+    Left = 776
+    Height = 23
+    Top = 272
+    Width = 80
+    TabOrder = 1
+    Text = '0'
+  end
+  object EditX: TEdit
+    Left = 976
+    Height = 23
+    Top = 272
+    Width = 80
+    TabOrder = 2
+    Text = '0'
+    OnChange = EditXChange
+  end
+  object ButtonCalculate: TButton
+    Left = 456
+    Height = 200
+    Top = 384
+    Width = 280
+    Caption = 'Рассчитать'
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Color = clGreen
+    Font.Height = -40
+    Font.Name = 'Fixedsys'
+    Font.Pitch = fpFixed
+    Font.Quality = fqDraft
+    Font.Style = [fsBold, fsItalic, fsUnderline, fsStrikeOut]
+    ParentFont = False
+    TabOrder = 3
+    OnClick = ButtonCalculateClick
+  end
+  object LabelResult: TLabel
+    Left = 706
+    Height = 1
+    Top = 87
+    Width = 1
+  end
+  object Label1: TLabel
+    Left = 512
+    Height = 15
+    Top = 272
+    Width = 52
+    Caption = 'Введите a'
+  end
+  object Label2: TLabel
+    Left = 704
+    Height = 15
+    Top = 272
+    Width = 53
+    Caption = 'Введите b'
+    OnClick = Label2Click
+  end
+  object Label3: TLabel
+    Left = 904
+    Height = 15
+    Top = 272
+    Width = 52
+    Caption = 'Введите x'
+  end
+  object BitBtn1: TBitBtn
+    Left = 792
+    Height = 190
+    Top = 384
+    Width = 320
+    DefaultCaption = True
+    Kind = bkClose
+    ModalResult = 11
+    TabOrder = 4
+  end
+end

@@ -1,0 +1,61 @@
+object Form1: TForm1
+  Left = 68
+  Height = 870
+  Top = 134
+  Width = 1776
+  Caption = 'Form1'
+  ClientHeight = 870
+  ClientWidth = 1776
+  OnCreate = FormCreate
+  LCLVersion = '3.2.0.0'
+  object LabelDiagonal: TLabel
+    Left = 80
+    Height = 1
+    Top = 107
+    Width = 1
+  end
+  object ButtonCalculate: TButton
+    Left = 128
+    Height = 25
+    Top = 192
+    Width = 75
+    Caption = 'Вычислить'
+    TabOrder = 0
+    OnClick = ButtonCalculateClick
+  end
+  object EditRadius: TEdit
+    Left = 16
+    Height = 23
+    Top = 168
+    Width = 80
+    TabOrder = 1
+  end
+  object EditRatio: TEdit
+    Left = 248
+    Height = 23
+    Top = 168
+    Width = 80
+    TabOrder = 2
+  end
+  object LabelArea: TLabel
+    Left = 231
+    Height = 1
+    Top = 104
+    Width = 1
+  end
+  object Label1: TLabel
+    Left = 8
+    Height = 15
+    Top = 144
+    Width = 87
+    Caption = 'Введите радиус:'
+    OnClick = Label1Click
+  end
+  object Label2: TLabel
+    Left = 224
+    Height = 15
+    Top = 144
+    Width = 154
+    Caption = 'Введите отношение сторон:'
+  end
+end
